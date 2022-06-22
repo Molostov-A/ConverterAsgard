@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConverterAsgard.Common
+namespace ConverterAsgard.Common.Models
 {
     public class FullMap
     {
@@ -13,4 +13,5 @@ namespace ConverterAsgard.Common
         public Notes[] notes { get; set; }
         public Bases[] nameBases { get; set; }
     }
+
 }
