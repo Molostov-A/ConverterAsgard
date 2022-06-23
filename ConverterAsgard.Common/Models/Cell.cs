@@ -58,7 +58,7 @@ namespace ConverterAsgard.Common.Models
         public int S { get; set; }
 
         [JsonPropertyName("pop")]
-        public int Pop { get; set; }
+        public float Pop { get; set; }
 
         [JsonPropertyName("culture")]
         public int Culture { get; set; }
