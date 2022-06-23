@@ -14,7 +14,7 @@ namespace ConverterAsgardConsoleApp
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
-            Console.WriteLine(map.info.version);
+            Console.WriteLine(map.coords.latN);
         }
     }
 }
