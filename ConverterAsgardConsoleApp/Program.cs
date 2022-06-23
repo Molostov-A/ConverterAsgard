@@ -14,8 +14,7 @@ namespace ConverterAsgardConsoleApp
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
-
-            var num = _storageTest.GetMap().Cells.Rivers[0].Width;
+            var num = _storageTest.GetMap().Cells.Religions[2].Name;
             Console.WriteLine(num);
         }
     }
