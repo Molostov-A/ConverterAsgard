@@ -8,14 +8,14 @@ namespace ConverterAsgardConsoleApp
 {
     internal class Program
     {
-        private static Storage _storageTest = new("map1");
+        private static Storage _storageTest = new("map");
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
 
-            var num = _storageTest.GetMap().CellHigh.Rivers[0].Width;
+            var num = _storageTest.GetMap().Cells.Rivers[0].Width;
             Console.WriteLine(num);
         }
     }
