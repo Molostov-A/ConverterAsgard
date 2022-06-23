@@ -15,8 +15,8 @@ namespace ConverterAsgard.Common.Models
         [JsonPropertyName("coords")]
         public Coords Coords { get; set; }
 
-        [JsonPropertyName("CellsFolder")]
-        public CellsFolder CellsFolder { get; set; }
+        [JsonPropertyName("cells")]
+        public Cells Cells { get; set; }
 
         [JsonPropertyName("vertices")]
         public List<Vertice> Vertices { get; set; }

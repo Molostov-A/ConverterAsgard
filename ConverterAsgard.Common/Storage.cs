@@ -5,13 +5,13 @@ namespace ConverterAsgard.Common
 {
     public class Storage
     {
-        private static JsonNewtonsoftProvide storage;
+        private static JsonNewtonsoftProvider storage;
         private FullMap Map { get; set; }
 
         
         public Storage(string name)
         {
-            storage = new JsonNewtonsoftProvide(name);
+            storage = new JsonNewtonsoftProvider(name);
             Map = storage.Read<FullMap>();
         }
 
