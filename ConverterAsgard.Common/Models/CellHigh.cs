@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace ConverterAsgard.Common.Models
 {
-    public class Cells
+    public class CellHigh
     {
         [JsonPropertyName("cells")]
         public List<Cell> cells { get; set; }
@@ -23,11 +23,11 @@ namespace ConverterAsgard.Common.Models
         [JsonPropertyName("provinces")]
         public Province[] Provinces { get; set; }
 
-        [JsonPropertyName("religions")]
-        public Religion[] religions { get; set; }
+        [JsonPropertyName("Religions")]
+        public Religion[] Religions { get; set; }
 
-        [JsonPropertyName("rivers")]
-        public List<River> rivers { get; set; }
+        [JsonPropertyName("Rivers")]
+        public List<River> Rivers { get; set; }
 
         [JsonPropertyName("markers")]
         public List<Marker> Markers { get; set; }
