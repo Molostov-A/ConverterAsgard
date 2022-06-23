@@ -18,7 +18,7 @@ namespace ConverterAsgardConsoleApp
             //biomes.I.Add(1);
             //map.Biomes = biomes;
             //_storageTest.Update(map);
-            var num = _storageTest.GetMap().vertices[0].C[0];
+            var num = _storageTest.GetMap().Notes[0].Id;
             Console.WriteLine(num);
         }
     }

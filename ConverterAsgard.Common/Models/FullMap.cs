@@ -25,7 +25,7 @@ namespace ConverterAsgard.Common.Models
         public Biomes Biomes { get; set; }
 
         [JsonPropertyName("notes")]
-        public List<Notes> Notes { get; set; }
+        public List<Note> Notes { get; set; }
 
         [JsonPropertyName("nameBases")]
         public List<Bases> NameBases { get; set; }
