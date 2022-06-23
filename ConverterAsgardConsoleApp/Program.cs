@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlTypes;
 using ConverterAsgard.Common;
 using ConverterAsgard.Common.Models;
@@ -13,8 +14,13 @@ namespace ConverterAsgardConsoleApp
         {
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
-
-            Console.WriteLine(map.coords.latN);
+            //var biomes = new Biomes();
+            //biomes.I = new List<int>();
+            //biomes.I.Add(1);
+            //map.Biomes = biomes;
+            //_storageTest.Update(map);
+            var num = _storageTest.GetMap().Biomes.Cost[1];
+            Console.WriteLine(num);
         }
     }
 }

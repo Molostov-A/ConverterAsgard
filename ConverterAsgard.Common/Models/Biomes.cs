@@ -11,28 +11,27 @@ namespace ConverterAsgard.Common.Models
     {
 
         [JsonPropertyName("i")]
-        public int[] Id { get; set; }
+        public List<int> I { get; set; }
 
         [JsonPropertyName("name")]
-        public string[] Name { get; set; }
+        public List<string> Name { get; set; }
 
         [JsonPropertyName("color")]
-        public string[] Color { get; set; }
+        public List<string> Color { get; set; }
 
         [JsonPropertyName("biomesMartix")]
-        public BiomeMatrix[] BiomesMartix { get; set; }
+        public List<Dictionary<int, int>> BiomesMartix { get; set; }
 
         [JsonPropertyName("habitability")]
-        public int[] Habitability { get; set; }
+        public List<int> Habitability { get; set; }
 
         [JsonPropertyName("iconsDensity")]
-        public int[] IconsDensity { get; set; }
+        public List<int> IconsDensity { get; set; }
 
         [JsonPropertyName("icons")]
-        public string[][] Icons { get; set; }
-    }
+        public List<List<string>> Icons { get; set; }
 
-    public enum BiomeMatrix
-    {
+        [JsonPropertyName("cost")]
+        public List<int> Cost { get; set; }
     }
 }
