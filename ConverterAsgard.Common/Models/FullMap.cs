@@ -19,7 +19,7 @@ namespace ConverterAsgard.Common.Models
         public CellsFolder CellsFolder { get; set; }
 
         [JsonPropertyName("vertices")]
-        public Vertice[] Vertices { get; set; }
+        public List<Vertice> Vertices { get; set; }
 
         [JsonPropertyName("Biomes")]
         public Biomes Biomes { get; set; }

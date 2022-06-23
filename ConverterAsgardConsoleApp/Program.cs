@@ -13,12 +13,7 @@ namespace ConverterAsgardConsoleApp
         {
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
-            //var biomes = new Biomes();
-            //biomes.I = new List<int>();
-            //biomes.I.Add(1);
-            //map.Biomes = biomes;
-            //_storageTest.Update(map);
-            var num = _storageTest.GetMap().Notes[0].Id;
+            var num = _storageTest.GetMap().Vertices.Count;
             Console.WriteLine(num);
         }
     }
