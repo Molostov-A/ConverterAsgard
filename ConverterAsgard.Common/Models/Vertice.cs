@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ConverterAsgard.Common.Models
@@ -11,12 +12,12 @@ namespace ConverterAsgard.Common.Models
     {
 
         [JsonPropertyName("p")]
-        public int[] P { get; set; }
+        public float[] P { get; set; }
 
         [JsonPropertyName("v")]
-        public int[] V { get; set; }
+        public float[] V { get; set; }
 
         [JsonPropertyName("c")]
-        public int[] C { get; set; }
+        public float[] C { get; set; }
     }
 }

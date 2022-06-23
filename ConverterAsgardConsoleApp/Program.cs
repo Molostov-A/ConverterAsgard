@@ -8,8 +8,7 @@ namespace ConverterAsgardConsoleApp
 {
     internal class Program
     {
-        private static Storage _storage = new("map");
-        private static Storage _storageTest = new("map1");
+        private static Storage _storageTest = new("map");
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -19,7 +18,7 @@ namespace ConverterAsgardConsoleApp
             //biomes.I.Add(1);
             //map.Biomes = biomes;
             //_storageTest.Update(map);
-            var num = _storageTest.GetMap().Biomes.Cost[1];
+            var num = _storageTest.GetMap().vertices[0].C[0];
             Console.WriteLine(num);
         }
     }

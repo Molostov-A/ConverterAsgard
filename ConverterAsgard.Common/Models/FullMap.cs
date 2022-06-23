@@ -1,17 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ConverterAsgard.Common.Models
 {
     public class FullMap
     {
-        public Info info { get; set; }
-        public Settings settings { get; set; }
-        public Coords coords { get; set; }
+        [JsonPropertyName("info")]
+        public Info Info { get; set; }
+
+        [JsonPropertyName("settings")]
+        public Settings Settings { get; set; }
+
+        [JsonPropertyName("coords")]
+        public Coords Coords { get; set; }
+
+        [JsonPropertyName("CellsFolder")]
         public CellsFolder CellsFolder { get; set; }
-        public Vertice[] vertices { get; set; }
+
+        [JsonPropertyName("vertices")]
+        public Vertice[] Vertices { get; set; }
+
+        [JsonPropertyName("Biomes")]
         public Biomes Biomes { get; set; }
-        public Notes[] notes { get; set; }
-        public Bases[] nameBases { get; set; }
+
+        [JsonPropertyName("notes")]
+        public List<Notes> Notes { get; set; }
+
+        [JsonPropertyName("nameBases")]
+        public List<Bases> NameBases { get; set; }
     }
 
 }
