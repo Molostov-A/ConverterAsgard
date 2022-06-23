@@ -8,8 +8,8 @@ namespace ConverterAsgard.Common.Models
         public Settings settings { get; set; }
         public Coords coords { get; set; }
         public CellsFolder CellsFolder { get; set; }
-        public Vertices[] vertices { get; set; }
-        public Biomes biomes { get; set; }
+        public Vertice[] vertices { get; set; }
+        public Biomes Biomes { get; set; }
         public Notes[] notes { get; set; }
         public Bases[] nameBases { get; set; }
     }
