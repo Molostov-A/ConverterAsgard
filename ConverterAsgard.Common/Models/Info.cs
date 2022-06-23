@@ -13,6 +13,6 @@ namespace ConverterAsgard.Common.Models
         public string exportedAt { get; set; }
         public string mapName { get; set; }
         public string seed { get; set; }
-        public int mapId { get; set; }
+        public long mapId { get; set; }
     }
 }

@@ -8,9 +8,10 @@ namespace ConverterAsgard.Common
         private static JsonProvider storage;
         private FullMap Map { get; set; }
 
-        public Storage()
+        
+        public Storage(string name)
         {
-            storage = new JsonProvider("map_test");
+            storage = new JsonProvider(name);
             Map = storage.Read<FullMap>();
         }
 
