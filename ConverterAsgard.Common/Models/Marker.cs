@@ -1,36 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Marker
     {
-        [JsonPropertyName("icon")]
+        [JsonProperty("icon")]
         public string Icon { get; set; }
 
-        [JsonPropertyName("type")]
+        [JsonProperty("type")]
         public string Type { get; set; }
 
-        [JsonPropertyName("dx")]
+        [JsonProperty("dx")]
         public int Dx { get; set; }
 
-        [JsonPropertyName("px")]
+        [JsonProperty("px")]
         public int Px { get; set; }
 
-        [JsonPropertyName("x")]
+        [JsonProperty("x")]
         public double X { get; set; }
 
-        [JsonPropertyName("y")]
+        [JsonProperty("y")]
         public double Y { get; set; }
 
-        [JsonPropertyName("cell")]
+        [JsonProperty("cell")]
         public int Cell { get; set; }
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
     }
 }

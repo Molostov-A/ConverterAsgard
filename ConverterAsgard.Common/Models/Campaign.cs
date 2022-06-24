@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Campaign
     {
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("start")]
+        [JsonProperty("start")]
         public int Start { get; set; }
 
-        [JsonPropertyName("end")]
+        [JsonProperty("end")]
         public int End { get; set; }
     }
 }

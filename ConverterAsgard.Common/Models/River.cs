@@ -1,43 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
 
     public class River
     {
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("source")]
+        [JsonProperty("source")]
         public int Source { get; set; }
 
-        [JsonPropertyName("mouth")]
+        [JsonProperty("mouth")]
         public int Mouth { get; set; }
 
-        [JsonPropertyName("discharge")]
+        [JsonProperty("discharge")]
         public int Discharge { get; set; }
 
-        [JsonPropertyName("length")]
+        [JsonProperty("length")]
         public double Length { get; set; }
 
-        [JsonPropertyName("width")]
+        [JsonProperty("width")]
         public double Width { get; set; }
 
-        [JsonPropertyName("widthFactor")]
+        [JsonProperty("widthFactor")]
         public double WidthFactor { get; set; }
 
-        [JsonPropertyName("sourceWidth")]
+        [JsonProperty("sourceWidth")]
         public int SourceWidth { get; set; }
 
-        [JsonPropertyName("parent")]
+        [JsonProperty("parent")]
         public int Parent { get; set; }
 
-        [JsonPropertyName("cells")]
+        [JsonProperty("cells")]
         public int[] Cells { get; set; }
     }
 }

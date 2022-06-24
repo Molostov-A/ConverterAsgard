@@ -1,66 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Burg
     {
-        [JsonPropertyName("cell")]
+        [JsonProperty("cell")]
         public int cell { get; set; }
 
-        [JsonPropertyName("x")]
+        [JsonProperty("x")]
         public double X { get; set; }
 
-        [JsonPropertyName("y")]
+        [JsonProperty("y")]
         public double Y { get; set; }
 
-        [JsonPropertyName("state")]
+        [JsonProperty("state")]
         public int State { get; set; }
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("culture")]
+        [JsonProperty("culture")]
         public int Culture { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("feature")]
+        [JsonProperty("feature")]
         public int Feature { get; set; }
 
-        [JsonPropertyName("capital")]
+        [JsonProperty("capital")]
         public int Capital { get; set; }
 
-        [JsonPropertyName("port")]
+        [JsonProperty("port")]
         public int Port { get; set; }
 
-        [JsonPropertyName("population")]
+        [JsonProperty("population")]
         public double Population { get; set; }
 
-        [JsonPropertyName("type")]
+        [JsonProperty("type")]
         public string type { get; set; }
 
-        [JsonPropertyName("coa")]
+        [JsonProperty("coa")]
         public Coa Coa { get; set; }
 
-        [JsonPropertyName("citadel")]
+        [JsonProperty("citadel")]
         public int Citadel { get; set; }
 
-        [JsonPropertyName("plaza")]
+        [JsonProperty("plaza")]
         public int Plaza { get; set; }
 
-        [JsonPropertyName("walls")]
+        [JsonProperty("walls")]
         public int Walls { get; set; }
 
-        [JsonPropertyName("shanty")]
+        [JsonProperty("shanty")]
         public int Shanty { get; set; }
 
-        [JsonPropertyName("temple")]
+        [JsonProperty("temple")]
         public int Temple { get; set; }
     }
 

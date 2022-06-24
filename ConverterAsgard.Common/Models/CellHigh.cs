@@ -1,35 +1,35 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class CellHigh
     {
-        [JsonPropertyName("cells")]
+        [JsonProperty("cells")]
         public List<Cell> cells { get; set; }
 
-        [JsonPropertyName("features")]
-        public List<Feature> Features { get; set; }
+        [JsonProperty("features")]
+        public object[] FeaturesObject { get; set; }
 
-        [JsonPropertyName("cultures")]
+        [JsonProperty("cultures")]
         public List<Culture> Cultures { get; set; }
 
-        [JsonPropertyName("burgs")]
+        [JsonProperty("burgs")]
         public List<Burg> Burgs { get; set; }
 
-        [JsonPropertyName("states")]
+        [JsonProperty("states")]
         public State[] States { get; set; }
 
-        [JsonPropertyName("provinces")]
+        [JsonProperty("provinces")]
         public Province[] Provinces { get; set; }
 
-        [JsonPropertyName("Religions")]
+        [JsonProperty("Religions")]
         public Religion[] Religions { get; set; }
 
-        [JsonPropertyName("Rivers")]
+        [JsonProperty("Rivers")]
         public List<River> Rivers { get; set; }
 
-        [JsonPropertyName("markers")]
+        [JsonProperty("markers")]
         public List<Marker> Markers { get; set; }
     }
 }

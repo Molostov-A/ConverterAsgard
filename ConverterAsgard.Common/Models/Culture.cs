@@ -1,42 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Culture
     {
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("base")]
+        [JsonProperty("base")]
         public int Base { get; set; }
 
-        [JsonPropertyName("shield")]
+        [JsonProperty("shield")]
         public string Shield { get; set; }
 
-        [JsonPropertyName("center")]
+        [JsonProperty("center")]
         public int Center { get; set; }
 
-        [JsonPropertyName("color")]
+        [JsonProperty("color")]
         public string Color { get; set; }
 
-        [JsonPropertyName("type")]
+        [JsonProperty("type")]
         public string Type { get; set; }
 
-        [JsonPropertyName("expansionism")]
+        [JsonProperty("expansionism")]
         public double Expansionism { get; set; }
 
-        [JsonPropertyName("origins")]
+        [JsonProperty("origins")]
         public object[] Origins { get; set; }
 
-        [JsonPropertyName("code")]
+        [JsonProperty("code")]
         public string Code { get; set; }
     }
 }

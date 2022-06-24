@@ -1,37 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Biomes
     {
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public List<int> I { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public List<string> Name { get; set; }
 
-        [JsonPropertyName("color")]
+        [JsonProperty("color")]
         public List<string> Color { get; set; }
 
-        [JsonPropertyName("biomesMartix")]
+        [JsonProperty("biomesMartix")]
         public List<Dictionary<int, int>> BiomesMartix { get; set; }
 
-        [JsonPropertyName("habitability")]
+        [JsonProperty("habitability")]
         public List<int> Habitability { get; set; }
 
-        [JsonPropertyName("iconsDensity")]
+        [JsonProperty("iconsDensity")]
         public List<int> IconsDensity { get; set; }
 
-        [JsonPropertyName("icons")]
+        [JsonProperty("icons")]
         public List<List<string>> Icons { get; set; }
 
-        [JsonPropertyName("cost")]
+        [JsonProperty("cost")]
         public List<int> Cost { get; set; }
     }
 }

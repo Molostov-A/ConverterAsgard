@@ -1,37 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Province
     {
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("state")]
+        [JsonProperty("state")]
         public int State { get; set; }
 
-        [JsonPropertyName("center")]
+        [JsonProperty("center")]
         public int Center { get; set; }
 
-        [JsonPropertyName("burg")]
+        [JsonProperty("burg")]
         public int Burg { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("formName")]
+        [JsonProperty("formName")]
         public string FormName { get; set; }
 
-        [JsonPropertyName("fullName")]
+        [JsonProperty("fullName")]
         public string FullName { get; set; }
 
-        [JsonPropertyName("color")]
+        [JsonProperty("color")]
         public string Color { get; set; }
 
 

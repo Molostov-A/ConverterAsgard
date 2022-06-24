@@ -1,24 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Coa
     {
-        [JsonPropertyName("t1")]
+        [JsonProperty("t1")]
         public string T1 { get; set; }
 
-        [JsonPropertyName("ordinaries")]
+        [JsonProperty("ordinaries")]
         public List<Ordinari> Ordinaries { get; set; }
 
-        [JsonPropertyName("charges")]
+        [JsonProperty("charges")]
         public Charge Charges { get; set; }
 
-        [JsonPropertyName("shield")]
+        [JsonProperty("shield")]
         public string Shield { get; set; }
     }
 }

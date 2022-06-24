@@ -1,84 +1,80 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Cell
     {
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("v")]
+        [JsonProperty("v")]
         public List<int> V { get; set; }
 
-        [JsonPropertyName("c")]
+        [JsonProperty("c")]
         public List<int> C { get; set; }
 
-        [JsonPropertyName("p")]
+        [JsonProperty("p")]
         public List<float> P { get; set; }
 
-        [JsonPropertyName("g")]
+        [JsonProperty("g")]
         public int G { get; set; }
 
-        [JsonPropertyName("h")]
+        [JsonProperty("h")]
         public int H { get; set; }
 
-        [JsonPropertyName("area")]
+        [JsonProperty("area")]
         public int Area { get; set; }
 
-        [JsonPropertyName("f")]
+        [JsonProperty("f")]
         public int F { get; set; }
 
-        [JsonPropertyName("t")]
+        [JsonProperty("t")]
         public int T { get; set; }
 
-        [JsonPropertyName("haven")]
+        [JsonProperty("haven")]
         public int Haven { get; set; }
 
-        [JsonPropertyName("harbor")]
+        [JsonProperty("harbor")]
         public int Harbor { get; set; }
 
-        [JsonPropertyName("fl")]
+        [JsonProperty("fl")]
         public int Fl { get; set; }
 
-        [JsonPropertyName("r")]
+        [JsonProperty("r")]
         public int R { get; set; }
 
-        [JsonPropertyName("conf")]
+        [JsonProperty("conf")]
         public int Conf { get; set; }
 
-        [JsonPropertyName("biome")]
+        [JsonProperty("biome")]
         public int Biome { get; set; }
 
-        [JsonPropertyName("s")]
+        [JsonProperty("s")]
         public int S { get; set; }
 
-        [JsonPropertyName("pop")]
+        [JsonProperty("pop")]
         public float Pop { get; set; }
 
-        [JsonPropertyName("culture")]
+        [JsonProperty("culture")]
         public int Culture { get; set; }
 
-        [JsonPropertyName("burg")]
+        [JsonProperty("burg")]
         public int Burg { get; set; }
 
-        [JsonPropertyName("road")]
+        [JsonProperty("road")]
         public int Road { get; set; }
 
-        [JsonPropertyName("crossroad")]
+        [JsonProperty("crossroad")]
         public int Crossroad { get; set; }
 
-        [JsonPropertyName("state")]
+        [JsonProperty("state")]
         public int State { get; set; }
 
-        [JsonPropertyName("religion")]
+        [JsonProperty("religion")]
         public int Religion { get; set; }
 
-        [JsonPropertyName("province")]
+        [JsonProperty("province")]
         public int Province { get; set; }
     }
 }

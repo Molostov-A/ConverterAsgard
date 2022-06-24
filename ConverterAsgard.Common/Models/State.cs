@@ -1,85 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class State
     {
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("color")]
+        [JsonProperty("color")]
         public string Color { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("expansionism")]
+        [JsonProperty("expansionism")]
         public double Expansionism { get; set; }
 
-        [JsonPropertyName("capital")]
+        [JsonProperty("capital")]
         public int Capital { get; set; }
 
-        [JsonPropertyName("type")]
+        [JsonProperty("type")]
         public string Type { get; set; }
 
-        [JsonPropertyName("Center")]
+        [JsonProperty("Center")]
         public int Center { get; set; }
 
-        [JsonPropertyName("culture")]
+        [JsonProperty("culture")]
         public int Culture { get; set; }
 
 
-        [JsonPropertyName("coa")]
+        [JsonProperty("coa")]
         public Coa Coa { get; set; }
 
-        [JsonPropertyName("urban")]
+        [JsonProperty("urban")]
         public int Urban { get; set; }
 
-        [JsonPropertyName("rural")]
+        [JsonProperty("rural")]
         public double Rural { get; set; }
 
-        [JsonPropertyName("burgs")]
+        [JsonProperty("burgs")]
         public int Burgs { get; set; }
 
-        [JsonPropertyName("area")]
+        [JsonProperty("area")]
         public int Area { get; set; }
 
-        [JsonPropertyName("cells")]
+        [JsonProperty("cells")]
         public int[] Cells { get; set; }
 
-        [JsonPropertyName("neighbors")]
+        [JsonProperty("neighbors")]
         public int[] Neighbors { get; set; }
 
-        [JsonPropertyName("campaigns")]
+        [JsonProperty("campaigns")]
         public List<Campaign> Campaigns { get; set; }
 
-        [JsonPropertyName("diplomacy")]
+        [JsonProperty("diplomacy")]
         public string[] Diplomacy { get; set; }
 
-        [JsonPropertyName("form")]
+        [JsonProperty("form")]
         public string Form { get; set; }
 
-        [JsonPropertyName("formName")]
+        [JsonProperty("formName")]
         public string FormName { get; set; }
 
-        [JsonPropertyName("fullName")]
+        [JsonProperty("fullName")]
         public string FullName { get; set; }
 
-        [JsonPropertyName("provinces")]
+        [JsonProperty("provinces")]
         public int[] Provinces { get; set; }
 
-        [JsonPropertyName("pole")]
+        [JsonProperty("pole")]
         public List<double> Pole { get; set; }
 
-        [JsonPropertyName("alert")]
+        [JsonProperty("alert")]
         public double Alert { get; set; }
 
-        [JsonPropertyName("military")]
+        [JsonProperty("military")]
         public List<Military> Military { get; set; }
     }
 }

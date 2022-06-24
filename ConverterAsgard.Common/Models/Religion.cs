@@ -9,34 +9,34 @@ namespace ConverterAsgard.Common.Models
 {
     public class Religion
     {
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("color")]
+        [JsonProperty("color")]
         public string Color { get; set; }
 
-        [JsonPropertyName("culture")]
+        [JsonProperty("culture")]
         public int Culture { get; set; }
 
-        [JsonPropertyName("type")]
+        [JsonProperty("type")]
         public string Type { get; set; }
 
-        [JsonPropertyName("form")]
+        [JsonProperty("form")]
         public string Form { get; set; }
 
-        [JsonPropertyName("deity")]
+        [JsonProperty("deity")]
         public string Deity { get; set; }
 
-        [JsonPropertyName("center")]
+        [JsonProperty("center")]
         public int Center { get; set; }
 
-        [JsonPropertyName("origins")]
+        [JsonProperty("origins")]
         public int[] Origins { get; set; }
 
-        [JsonPropertyName("code")]
+        [JsonProperty("code")]
         public string Code { get; set; }
     }
 }

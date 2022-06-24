@@ -1,33 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class FullMap
     {
-        [JsonPropertyName("info")]
+        [JsonProperty("info")]
         public Info Info { get; set; }
 
-        [JsonPropertyName("settings")]
+        [JsonProperty("settings")]
         public Settings Settings { get; set; }
 
-        [JsonPropertyName("coords")]
+        [JsonProperty("coords")]
         public Coords Coords { get; set; }
 
-        [JsonPropertyName("cells")]
+        [JsonProperty("cells")]
         public CellHigh Cells { get; set; }
 
-        [JsonPropertyName("vertices")]
+        [JsonProperty("vertices")]
         public List<Vertice> Vertices { get; set; }
 
-        [JsonPropertyName("Biomes")]
+        [JsonProperty("Biomes")]
         public Biomes Biomes { get; set; }
 
-        [JsonPropertyName("notes")]
+        [JsonProperty("notes")]
         public List<Note> Notes { get; set; }
 
-        [JsonPropertyName("nameBases")]
+        [JsonProperty("nameBases")]
         public List<Bases> NameBases { get; set; }
     }
 

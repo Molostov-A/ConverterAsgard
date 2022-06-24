@@ -1,33 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Bases
     {
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("min")]
+        [JsonProperty("min")]
         public int min { get; set; }
 
-        [JsonPropertyName("max")]
+        [JsonProperty("max")]
         public int max { get; set; }
 
-        [JsonPropertyName("d")]
+        [JsonProperty("d")]
         public string D { get; set; }
 
-        [JsonPropertyName("m")]
+        [JsonProperty("m")]
         public float M { get; set; }
 
-        [JsonPropertyName("b")]
+        [JsonProperty("b")]
         public string B { get; set; }
     }
 }

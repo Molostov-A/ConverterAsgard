@@ -1,48 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Military
     {
-        [JsonPropertyName("i")]
+        [JsonProperty("i")]
         public int I { get; set; }
 
-        [JsonPropertyName("a")]
+        [JsonProperty("a")]
         public int A { get; set; }
 
-        [JsonPropertyName("cell")]
+        [JsonProperty("cell")]
         public int cell { get; set; }
 
-        [JsonPropertyName("x")]
+        [JsonProperty("x")]
         public int X { get; set; }
 
-        [JsonPropertyName("y")]
+        [JsonProperty("y")]
         public int Y { get; set; }
 
-        [JsonPropertyName("bx")]
+        [JsonProperty("bx")]
         public int bx { get; set; }
 
-        [JsonPropertyName("by")]
+        [JsonProperty("by")]
         public int by { get; set; }
 
-        [JsonPropertyName("u")]
+        [JsonProperty("u")]
         public GroupArmy U { get; set; }
 
-        [JsonPropertyName("n")]
+        [JsonProperty("n")]
         public int N { get; set; }
 
-        [JsonPropertyName("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonPropertyName("state")]
+        [JsonProperty("state")]
         public int State { get; set; }
 
-        [JsonPropertyName("icon")]
+        [JsonProperty("icon")]
         public string icon { get; set; }
     }
 }
