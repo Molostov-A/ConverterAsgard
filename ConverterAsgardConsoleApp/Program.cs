@@ -10,37 +10,15 @@ namespace ConverterAsgardConsoleApp
 {
     public class Program
     {
-        List<Feature> Features(List<object> FeaturesObject)
-        {
-            var FeaturesTrue = new List<Feature>();
-            foreach (var obj in FeaturesObject)
-            {
-                string text = obj.ToString();
-                try
-                {
-                    dynamic result = JsonConvert.DeserializeObject(text);
 
-                    //var result = JsonConvert
-                    //    .DeserializeAnonymousType(text, new {samples = default(List<Feature>)})
-                    //    .samples;
-                    FeaturesTrue.Add(result);
-                }
-                catch { }
-            }
-
-            return FeaturesTrue;
-        }
-
-        private static Storage _storageTest = new("map1");
+        private static Storage _storageTest = new("map");
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
-            var num = _storageTest.GetMap().Cells;
-
-
-            num = _storageTest.GetMap().Cells;
+            var num = _storageTest.GetMap().Cells.Features[1].Type;
+            
             Console.WriteLine(num);
         }
     }

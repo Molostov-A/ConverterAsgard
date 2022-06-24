@@ -8,8 +8,32 @@ namespace ConverterAsgard.Common.Models
         [JsonProperty("cells")]
         public List<Cell> cells { get; set; }
 
+        private List<object> _featuresObject;
+
         [JsonProperty("features")]
-        public object[] FeaturesObject { get; set; }
+        public List<object> FeaturesObject
+        {
+            get
+            {
+                return _featuresObject;
+            }
+            set
+            {
+                _featuresObject = value;
+                Features = new List<Feature>();
+                Features.Add(null);
+                foreach (var obj in value)
+                {
+                    try
+                    {
+                        Features.Add(JsonConvert.DeserializeObject<Feature>(obj.ToString()));
+                    }
+                    catch { }
+                }
+            }
+        }
+
+        public List<Feature> Features { get; set; }
 
         [JsonProperty("cultures")]
         public List<Culture> Cultures { get; set; }
