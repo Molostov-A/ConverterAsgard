@@ -6,9 +6,7 @@ namespace ConverterAsgard.Common.Models
     public class CellHigh
     {
         [JsonProperty("cells")]
-        public List<Cell> cells { get; set; }
-
-        private List<object> _featuresObject;
+        public List<Cell> CellsProperty { get; set; }
 
         [JsonProperty("features")]
         public List<object> FeaturesObject
@@ -32,6 +30,7 @@ namespace ConverterAsgard.Common.Models
                 }
             }
         }
+        private List<object> _featuresObject;
 
         public List<Feature> Features { get; set; }
 
@@ -46,7 +45,30 @@ namespace ConverterAsgard.Common.Models
         public State[] States { get; set; }
 
         [JsonProperty("provinces")]
-        public Province[] Provinces { get; set; }
+        public List<object> ProvincesObject
+        {
+            get
+            {
+                return _provincesObject;
+            }
+            set
+            {
+                _provincesObject = value;
+                Provinces = new List<Province>();
+                Provinces.Add(null);
+                foreach (var obj in value)
+                {
+                    try
+                    {
+                        Provinces.Add(JsonConvert.DeserializeObject<Province>(obj.ToString()));
+                    }
+                    catch { }
+                }
+            }
+        }
+
+        private List<object> _provincesObject;
+        public List<Province> Provinces { get; set; }
 
         [JsonProperty("Religions")]
         public Religion[] Religions { get; set; }
