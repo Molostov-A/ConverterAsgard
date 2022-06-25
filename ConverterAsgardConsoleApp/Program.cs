@@ -7,7 +7,7 @@ namespace ConverterAsgardConsoleApp
     public class Program
     {
 
-        private static StorageParseMap _storageParseMapTest = new("Ongyland Full 2022-06-21-23-53");
+        private static StorageParseMap _storageParseMapTest = new("Couria Full 2022-06-25-11-37 (2)");
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
