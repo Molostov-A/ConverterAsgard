@@ -38,7 +38,7 @@ namespace ConverterAsgard.Common.Models
         public float Population { get; set; }
 
         [JsonProperty("type")]
-        public string type { get; set; }
+        public string Type { get; set; }
 
         [JsonProperty("coa")]
         public Coa Coa { get; set; }

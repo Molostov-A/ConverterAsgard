@@ -11,7 +11,7 @@ namespace ConverterAsgard.Common.Models
         public int A { get; set; }
 
         [JsonProperty("cell")]
-        public int cell { get; set; }
+        public int Cell { get; set; }
 
         [JsonProperty("x")]
         public float X { get; set; }
@@ -20,10 +20,10 @@ namespace ConverterAsgard.Common.Models
         public float Y { get; set; }
 
         [JsonProperty("bx")]
-        public float bx { get; set; }
+        public float Bx { get; set; }
 
         [JsonProperty("by")]
-        public float by { get; set; }
+        public float By { get; set; }
 
         [JsonProperty("u")]
         public GroupArmy U { get; set; }
@@ -38,6 +38,6 @@ namespace ConverterAsgard.Common.Models
         public int State { get; set; }
 
         [JsonProperty("icon")]
-        public string icon { get; set; }
+        public string Icon { get; set; }
     }
 }

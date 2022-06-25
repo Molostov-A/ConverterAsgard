@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
@@ -29,7 +30,7 @@ namespace ConverterAsgard.Common.Models
         public float Expansionism { get; set; }
 
         [JsonProperty("origins")]
-        public object[] Origins { get; set; }
+        public List<object> Origins { get; set; }
 
         [JsonProperty("code")]
         public string Code { get; set; }

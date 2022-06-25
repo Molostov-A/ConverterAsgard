@@ -1,20 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Army
     {
-        public string icon { get; set; }
-        public string name { get; set; }
-        public float rural { get; set; }
-        public float urban { get; set; }
-        public int crew { get; set; }
-        public int power { get; set; }
-        public string type { get; set; }
-        public int separate { get; set; }
+        [JsonProperty("icon")]
+        public string Icon { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("rural")]
+        public float Rural { get; set; }
+
+        [JsonProperty("urban")]
+        public float Urban { get; set; }
+
+        [JsonProperty("crew")]
+        public int Crew { get; set; }
+
+        [JsonProperty("power")]
+        public int Power { get; set; }
+
+        [JsonProperty("type")]
+        public string Type { get; set; }
+
+        [JsonProperty("separate")]
+        public int Separate { get; set; }
     }
 }

@@ -11,10 +11,10 @@ namespace ConverterAsgard.Common.Models
         public int I { get; set; }
 
         [JsonProperty("min")]
-        public int min { get; set; }
+        public int Min { get; set; }
 
         [JsonProperty("max")]
-        public int max { get; set; }
+        public int Max { get; set; }
 
         [JsonProperty("d")]
         public string D { get; set; }

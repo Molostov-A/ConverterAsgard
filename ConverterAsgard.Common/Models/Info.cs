@@ -3,16 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Info
     {
-        public string version { get; set; }
-        public string description { get; set; }
-        public string exportedAt { get; set; }
-        public string mapName { get; set; }
-        public string seed { get; set; }
-        public long mapId { get; set; }
+        [JsonProperty("version")]
+        public string Version { get; set; }
+
+        [JsonProperty("description")]
+        public string Description { get; set; }
+
+        [JsonProperty("exportedAt")]
+        public string ExportedAt { get; set; }
+
+        [JsonProperty("mapName")]
+        public string MapName { get; set; }
+
+        [JsonProperty("seed")]
+        public string Seed { get; set; }
+
+        [JsonProperty("mapId")]
+        public long MapId { get; set; }
     }
 }

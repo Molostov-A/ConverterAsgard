@@ -3,36 +3,85 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
     public class Settings
     {
-        public string distanceUnit { get; set; }
-        public string distanceScale { get; set; }
-        public string areaUnit { get; set; }
-        public string heightUnit { get; set; }
-        public string heightExponent { get; set; }
-        public string temperatureScale { get; set; }
-        public string barSize { get; set; }
-        public string barLabel { get; set; }
-        public string barBackOpacity { get; set; }
-        public string barBackColor { get; set; }
-        public string barPosX { get; set; }
-        public string barPosY { get; set; }
-        public int populationRate { get; set; }
-        public int urbanization { get; set; }
-        public string mapSize { get; set; }
-        public string latitudeO { get; set; }
-        public string temperatureEquator { get; set; }
-        public string temperaturePole { get; set; }
-        public string prec { get; set; }
-        public Options options { get; set; }
-        public string mapName { get; set; }
-        public bool hideLabels { get; set; }
-        public string stylePreset { get; set; }
-        public bool rescaleLabels { get; set; }
-        public int urbanDensity { get; set; }
+        [JsonProperty("distanceUnit")]
+        public string DistanceUnit { get; set; }
 
+        [JsonProperty("distanceScale")]
+        public string DistanceScale { get; set; }
+
+        [JsonProperty("areaUnit")]
+        public string AreaUnit { get; set; }
+
+        [JsonProperty("heightUnit")]
+        public string HeightUnit { get; set; }
+
+        [JsonProperty("heightExponent")]
+        public string HeightExponent { get; set; }
+
+        [JsonProperty("temperatureScale")]
+        public string TemperatureScale { get; set; }
+
+        [JsonProperty("barSize")]
+        public string BarSize { get; set; }
+
+        [JsonProperty("barLabel")]
+        public string BarLabel { get; set; }
+
+        [JsonProperty("barBackOpacity")]
+        public string BarBackOpacity { get; set; }
+
+        [JsonProperty("barBackColor")]
+        public string BarBackColor { get; set; }
+
+        [JsonProperty("barPosX")]
+        public string BarPosX { get; set; }
+
+        [JsonProperty("barPosY")]
+        public string BarPosY { get; set; }
+
+        [JsonProperty("populationRate")]
+        public int PopulationRate { get; set; }
+
+        [JsonProperty("urbanization")]
+        public int Urbanization { get; set; }
+
+        [JsonProperty("mapSize")]
+        public string MapSize { get; set; }
+
+        [JsonProperty("latitudeO")]
+        public string LatitudeO { get; set; }
+
+        [JsonProperty("temperatureEquator")]
+        public string TemperatureEquator { get; set; }
+
+        [JsonProperty("temperaturePole")]
+        public string TemperaturePole { get; set; }
+
+        [JsonProperty("prec")]
+        public string Prec { get; set; }
+
+        [JsonProperty("options")]
+        public Options Options { get; set; }
+
+        [JsonProperty("mapName")]
+        public string MapName { get; set; }
+
+        [JsonProperty("hideLabels")]
+        public bool HideLabels { get; set; }
+
+        [JsonProperty("stylePreset")]
+        public string StylePreset { get; set; }
+
+        [JsonProperty("rescaleLabels")]
+        public bool RescaleLabels { get; set; }
+
+        [JsonProperty("urbanDensity")]
+        public int UrbanDensity { get; set; }
     }
 }

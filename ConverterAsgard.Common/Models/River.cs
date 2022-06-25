@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
 {
@@ -33,6 +34,6 @@ namespace ConverterAsgard.Common.Models
         public int Parent { get; set; }
 
         [JsonProperty("cells")]
-        public int[] Cells { get; set; }
+        public List<int> Cells { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace ConverterAsgard.Common.Models
         public string Name { get; set; }
 
         [JsonProperty("legend")]
-        public string legend { get; set; }
+        public string Legend { get; set; }
         
     }
 }
