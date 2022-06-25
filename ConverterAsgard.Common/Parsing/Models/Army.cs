@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ConverterAsgard.Common.Models
+namespace ConverterAsgard.Common.Parsing.Models
 {
     public class Army
     {

@@ -18,7 +18,6 @@ namespace ConverterAsgard.Common
 
         public void Write<T>(T TObject)
         {
-            //var json = JsonConvert.SerializeObject(TObject);
             var options = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),

@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
-using ConverterAsgard.Common.Models;
+using ConverterAsgard.Common.Parsing.Models;
 
 namespace ConverterAsgard.Common
 {
-    public class Storage
+    public class StorageParseMap
     {
         private static JsonNewtonsoftProvider storage;
         private FullMap Map { get; set; }
 
         
-        public Storage(string name)
+        public StorageParseMap(string name)
         {
             storage = new JsonNewtonsoftProvider(name);
             Map = storage.Read<FullMap>();

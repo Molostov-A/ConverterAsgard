@@ -5,11 +5,11 @@ using System.Text.Unicode;
 
 namespace ConverterAsgard.Common
 {
-    public class JsonProvider
+    public class JsonSystemProvider
     {
         private string path { get; }
 
-        public JsonProvider(string name)
+        public JsonSystemProvider(string name)
         {
             path = Directory.GetCurrentDirectory() + @"\" + name + ".json";
         }

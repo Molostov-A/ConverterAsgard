@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace ConverterAsgard.Common.Models
+namespace ConverterAsgard.Common.Parsing.Models
 {
     public class State
     {
