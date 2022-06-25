@@ -14,6 +14,6 @@ namespace ConverterAsgard.Common.Models
         public string P { get; set; }
 
         [JsonProperty("size")]
-        public double Size { get; set; }
+        public float Size { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace ConverterAsgard.Common.Models
         public List<Ordinari> Ordinaries { get; set; }
 
         [JsonProperty("charges")]
-        public Charge Charges { get; set; }
+        public List<Charge> Charges { get; set; }
 
         [JsonProperty("shield")]
         public string Shield { get; set; }

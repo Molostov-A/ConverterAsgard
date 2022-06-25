@@ -1,11 +1,8 @@
 ﻿using System.IO;
-using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
 using Newtonsoft.Json;
-using Newtonsoft;
-using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
 
 namespace ConverterAsgard.Common

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
 using ConverterAsgard.Common;
-using ConverterAsgard.Common.Models;
-using Newtonsoft.Json;
 
 
 namespace ConverterAsgardConsoleApp
@@ -17,7 +13,7 @@ namespace ConverterAsgardConsoleApp
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
-            var num = _storageTest.GetMap().Cells.Features[1].Type;
+            var num = _storageTest.GetMap().Cells.Burgs[1].Name;
             
             Console.WriteLine(num);
         }

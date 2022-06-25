@@ -35,6 +35,7 @@ namespace ConverterAsgard.Common.Models
 
         public List<Feature> Features { get; set; }
 
+
         [JsonProperty("cultures")]
         public List<Culture> Cultures { get; set; }
 
