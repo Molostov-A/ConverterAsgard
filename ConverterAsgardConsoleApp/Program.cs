@@ -7,13 +7,13 @@ namespace ConverterAsgardConsoleApp
     public class Program
     {
 
-        private static StorageParseMap _storageParseMapTest = new("Couria Full 2022-06-25-11-37 (2)");
+        private static StorageParseMap _storageParseMapTest = new("Meresia Minimal 2022-06-25-11-54");
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             var map = _storageParseMapTest.GetMap();
 
-            var num = _storageParseMapTest.GetMap().Cells.States[1].Type;
+            var num = _storageParseMapTest.GetMap();
             
             Console.WriteLine(num);
         }
