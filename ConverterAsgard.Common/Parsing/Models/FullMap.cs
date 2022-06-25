@@ -16,10 +16,10 @@ namespace ConverterAsgard.Common.Parsing.Models
         public Coords Coords { get; set; }
 
         [JsonProperty("cells")]
-        public CellHigh Cells { get; set; }
+        public CellHigh Cells { get; set; } // ячейки
 
         [JsonProperty("vertices")]
-        public List<Vertice> Vertices { get; set; }
+        public List<Vertice> Vertices { get; set; }  // вершины
 
         [JsonProperty("Biomes")]
         public Biomes Biomes { get; set; }

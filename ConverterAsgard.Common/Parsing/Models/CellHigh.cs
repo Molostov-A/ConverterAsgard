@@ -6,7 +6,7 @@ namespace ConverterAsgard.Common.Parsing.Models
     public class CellHigh
     {
         [JsonProperty("cells")]
-        public List<Cell> CellsProperty { get; set; }
+        public List<Cell> CellsList { get; set; }  // список всех ячеек
 
         [JsonProperty("features")]
         public List<object> FeaturesObject

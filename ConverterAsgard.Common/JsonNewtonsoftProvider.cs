@@ -9,11 +9,11 @@ namespace ConverterAsgard.Common
 {
     public class JsonNewtonsoftProvider
     {
-        private string path { get; }
+        private string _path { get; }
 
-        public JsonNewtonsoftProvider(string name)
+        public JsonNewtonsoftProvider(string name, string path)
         {
-            path = Directory.GetCurrentDirectory() + @"\" + name + ".json";
+            _path = path + @"\" + name + ".json";
         }
 
         public void Write<T>(T TObject)
@@ -24,7 +24,7 @@ namespace ConverterAsgard.Common
                 WriteIndented = true
             };
             var json = System.Text.Json.JsonSerializer.Serialize(TObject, options);
-            File.WriteAllText(path, json);
+            File.WriteAllText(_path, json);
         }
 
         public T Read<T>() where T : new()
@@ -32,7 +32,7 @@ namespace ConverterAsgard.Common
             T TObject = new T();
             try
             {
-                var json = File.ReadAllText(path);
+                var json = File.ReadAllText(_path);
                 TObject = JsonConvert.DeserializeObject<T>(json);
             }
             catch (FileNotFoundException)

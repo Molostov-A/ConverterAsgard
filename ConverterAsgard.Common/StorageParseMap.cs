@@ -9,9 +9,9 @@ namespace ConverterAsgard.Common
         private FullMap Map { get; set; }
 
         
-        public StorageParseMap(string name)
+        public StorageParseMap(string name, string path)
         {
-            storage = new JsonNewtonsoftProvider(name);
+            storage = new JsonNewtonsoftProvider(name, path);
             Map = storage.Read<FullMap>();
         }
 
