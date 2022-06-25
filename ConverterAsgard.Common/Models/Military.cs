@@ -14,16 +14,16 @@ namespace ConverterAsgard.Common.Models
         public int cell { get; set; }
 
         [JsonProperty("x")]
-        public int X { get; set; }
+        public float X { get; set; }
 
         [JsonProperty("y")]
-        public int Y { get; set; }
+        public float Y { get; set; }
 
         [JsonProperty("bx")]
-        public int bx { get; set; }
+        public float bx { get; set; }
 
         [JsonProperty("by")]
-        public int by { get; set; }
+        public float by { get; set; }
 
         [JsonProperty("u")]
         public GroupArmy U { get; set; }

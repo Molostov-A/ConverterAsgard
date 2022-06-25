@@ -8,10 +8,10 @@ namespace ConverterAsgard.Common.Models
         public int cell { get; set; }
 
         [JsonProperty("x")]
-        public double X { get; set; }
+        public float X { get; set; }
 
         [JsonProperty("y")]
-        public double Y { get; set; }
+        public float Y { get; set; }
 
         [JsonProperty("state")]
         public int State { get; set; }
@@ -35,7 +35,7 @@ namespace ConverterAsgard.Common.Models
         public int Port { get; set; }
 
         [JsonProperty("population")]
-        public double Population { get; set; }
+        public float Population { get; set; }
 
         [JsonProperty("type")]
         public string type { get; set; }

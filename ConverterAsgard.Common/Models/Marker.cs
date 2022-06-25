@@ -17,10 +17,10 @@ namespace ConverterAsgard.Common.Models
         public int Px { get; set; }
 
         [JsonProperty("x")]
-        public double X { get; set; }
+        public float X { get; set; }
 
         [JsonProperty("y")]
-        public double Y { get; set; }
+        public float Y { get; set; }
 
         [JsonProperty("cell")]
         public int Cell { get; set; }

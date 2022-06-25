@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace ConverterAsgard.Common.Models
@@ -15,7 +16,7 @@ namespace ConverterAsgard.Common.Models
         public string Name { get; set; }
 
         [JsonProperty("expansionism")]
-        public double Expansionism { get; set; }
+        public float Expansionism { get; set; }
 
         [JsonProperty("capital")]
         public int Capital { get; set; }
@@ -29,15 +30,14 @@ namespace ConverterAsgard.Common.Models
         [JsonProperty("culture")]
         public int Culture { get; set; }
 
-
         [JsonProperty("coa")]
         public Coa Coa { get; set; }
 
         [JsonProperty("urban")]
-        public int Urban { get; set; }
+        public float Urban { get; set; }
 
         [JsonProperty("rural")]
-        public double Rural { get; set; }
+        public float Rural { get; set; }
 
         [JsonProperty("burgs")]
         public int Burgs { get; set; }
@@ -46,16 +46,48 @@ namespace ConverterAsgard.Common.Models
         public int Area { get; set; }
 
         [JsonProperty("cells")]
-        public int[] Cells { get; set; }
+        public int Cells { get; set; }
 
         [JsonProperty("neighbors")]
-        public int[] Neighbors { get; set; }
+        public List<int> Neighbors { get; set; }
 
         [JsonProperty("campaigns")]
         public List<Campaign> Campaigns { get; set; }
 
         [JsonProperty("diplomacy")]
-        public string[] Diplomacy { get; set; }
+        public List<object> DiplomacyObjects
+        {
+            get
+            {
+                return _diplomacyObjects;
+            }
+            set
+            {
+                _diplomacyObjects = value;
+                Diplomacy = new List<string>();
+                foreach (var obj in value)
+                {
+                    try
+                    {
+                        Diplomacy = JsonConvert.DeserializeObject<List<string>>(obj.ToString());
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            Diplomacy.Add(obj.ToString());
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+            }
+        }
+
+        private List<object> _diplomacyObjects;
+
+        public List<string> Diplomacy { get; set; }
 
         [JsonProperty("form")]
         public string Form { get; set; }
@@ -67,13 +99,13 @@ namespace ConverterAsgard.Common.Models
         public string FullName { get; set; }
 
         [JsonProperty("provinces")]
-        public int[] Provinces { get; set; }
+        public List<int> Provinces { get; set; }
 
         [JsonProperty("pole")]
-        public List<double> Pole { get; set; }
+        public List<float> Pole { get; set; }
 
         [JsonProperty("alert")]
-        public double Alert { get; set; }
+        public float Alert { get; set; }
 
         [JsonProperty("military")]
         public List<Military> Military { get; set; }

@@ -10,8 +10,8 @@ namespace ConverterAsgard.Common.Models
     {
         public string icon { get; set; }
         public string name { get; set; }
-        public double rural { get; set; }
-        public double urban { get; set; }
+        public float rural { get; set; }
+        public float urban { get; set; }
         public int crew { get; set; }
         public int power { get; set; }
         public string type { get; set; }

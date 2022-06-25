@@ -42,7 +42,7 @@ namespace ConverterAsgard.Common.Models
         public List<Burg> Burgs { get; set; }
 
         [JsonProperty("states")]
-        public State[] States { get; set; }
+        public List<State> States { get; set; }
 
         [JsonProperty("provinces")]
         public List<object> ProvincesObject
@@ -71,7 +71,7 @@ namespace ConverterAsgard.Common.Models
         public List<Province> Provinces { get; set; }
 
         [JsonProperty("Religions")]
-        public Religion[] Religions { get; set; }
+        public List<Religion> Religions { get; set; }
 
         [JsonProperty("Rivers")]
         public List<River> Rivers { get; set; }

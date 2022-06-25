@@ -13,7 +13,7 @@ namespace ConverterAsgardConsoleApp
             Console.WriteLine("Hello World!");
             var map = _storageTest.GetMap();
 
-            var num = _storageTest.GetMap().Cells.Provinces[1].Name;
+            var num = _storageTest.GetMap().Cells.States[1].Type;
             
             Console.WriteLine(num);
         }

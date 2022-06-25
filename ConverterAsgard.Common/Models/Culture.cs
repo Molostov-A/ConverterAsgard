@@ -26,7 +26,7 @@ namespace ConverterAsgard.Common.Models
         public string Type { get; set; }
 
         [JsonProperty("expansionism")]
-        public double Expansionism { get; set; }
+        public float Expansionism { get; set; }
 
         [JsonProperty("origins")]
         public object[] Origins { get; set; }

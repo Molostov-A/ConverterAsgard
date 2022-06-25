@@ -18,13 +18,13 @@ namespace ConverterAsgard.Common.Models
         public int Discharge { get; set; }
 
         [JsonProperty("length")]
-        public double Length { get; set; }
+        public float Length { get; set; }
 
         [JsonProperty("width")]
-        public double Width { get; set; }
+        public float Width { get; set; }
 
         [JsonProperty("widthFactor")]
-        public double WidthFactor { get; set; }
+        public float WidthFactor { get; set; }
 
         [JsonProperty("sourceWidth")]
         public int SourceWidth { get; set; }
